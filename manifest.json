@@ -1,0 +1,10 @@
+{
+    "name": "Ajmer's Weather",
+    "start_url": "index.html",
+    "scope": "./",
+    "icons": [{
+        "src": "imgs/logo.png",
+        "type": "image/png"
+    }],
+    "display": "standalone"
+}
