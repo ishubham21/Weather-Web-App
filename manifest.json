@@ -1,6 +1,9 @@
 {
     "name": "Ajmer's Weather",
     "short_name": "Weather Web App",
+    "background_color": "#fff",
+    "theme_color": "#0EC3F7",
+    "description": "IT Services & Solutions.",
     "start_url": "index.html",
     "scope": "./",
     "icons": [{

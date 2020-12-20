@@ -1,10 +1,23 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  overflow: hidden;
+}
+
 .container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-pack: distribute;
       justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   background-color: #232323;
+  height: 100vh;
 }
 
 .container div {
@@ -13,10 +26,21 @@
   -webkit-box-flex: 0;
       -ms-flex: 0 0 41%;
           flex: 0 0 41%;
-  border: 2px solid #0062FF;
 }
 
 .container .temp {
   font-size: 5em;
+}
+
+.container .city {
+  line-height: 4em;
+}
+
+.container .city p {
+  font-size: 20px;
+}
+
+.container .city h1 {
+  font-size: 50px;
 }
 /*# sourceMappingURL=style.css.map */

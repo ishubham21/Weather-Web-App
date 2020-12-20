@@ -1,14 +1,31 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    overflow: hidden;
+}
 .container{
     display: flex;
     justify-content: space-around;
+    align-items: center;
     background-color: #232323;
+    height: 100vh;
     div{
         color: #fff;
         text-align: center;
         flex: 0 0 41%;
-        border: 2px solid #0062FF;
     }
     .temp{
         font-size: 5em;
+    }
+    .city{
+        line-height: 4em;
+        p{
+            font-size: 20px;
+        }
+        h1{
+            font-size: 50px;
+        }
     }
 }
