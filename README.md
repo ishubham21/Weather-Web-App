@@ -12,5 +12,7 @@ To achieve this I'm using a service worker. A service worker is a script that yo
 
 4. Counter the prompt and tap 'Install'
 
-5. Check your home screen 
+5. Check your home screen for the installed app.
+
+6. Open and run!! 
 
