@@ -27,16 +27,31 @@ body {
 .container div {
   text-align: center;
   -webkit-box-flex: 0;
-      -ms-flex: 0 0 41%;
-          flex: 0 0 41%;
+      -ms-flex: 0 0 50%;
+          flex: 0 0 50%;
+}
+
+.container .temp {
+  text-align: center;
 }
 
 .container .temp h1 {
-  font-size: 5em;
+  position: relative;
+  font-size: 4.5em;
+}
+
+.container .temp .deg {
+  display: inline-block;
+  font-size: 0.5em;
+  -webkit-transform: translate(7px, -25px);
+          transform: translate(7px, -25px);
 }
 
 .container .temp h2 {
   margin-top: 10px;
+}
+
+.container .temp h2 span {
   font-weight: 400;
 }
 
@@ -52,7 +67,7 @@ body {
   font-size: 35px;
 }
 
-@media (max-width: 500px) {
+@media (max-width: 769px) {
   .container {
     -webkit-box-pack: center;
         -ms-flex-pack: center;

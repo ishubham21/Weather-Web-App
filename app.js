@@ -14,15 +14,24 @@ else {
     console.log('No service-worker on this browser');
 }
 
+function getWeather(city){
+    fetch(`https://api.openweathermap.org/data/2.5/weather?q=${city}&units=metric&apikey=946c870db6ca82b017d54a8aa62c349a`)
+        .then(weatherObj => weatherObj.json())
+        .then((weatherData) => {
+            printData(weatherData.main.temp, weatherData.main.feels_like)
+        })
+        .catch((err) => {
+            alert('Server error:', err)
+        })
+}
 
-//to show the add to home screen option
-let deferredPrompt;
+function printData(temp, feels_like){
+    var tempR = document.querySelector('#tempR')
+    tempR.innerHTML = `${temp}`
 
-window.addEventListener('beforeinstallprompt', (e) => {
-    // Prevent the mini-infobar from appearing on mobile
-    e.preventDefault();
-    // Stash the event so it can be triggered later.
-    deferredPrompt = e;
-    // Update UI notify the user they can install the PWA
-    showInstallPromotion();
-});
+    var flsLike = document.querySelector('#feels-like')
+    flsLike.innerHTML = ` ${feels_like} °C`
+}
+
+//calling weather of ajmer
+getWeather('ajmer')
