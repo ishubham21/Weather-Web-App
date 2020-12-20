@@ -4,13 +4,19 @@
   display: flex;
   -ms-flex-pack: distribute;
       justify-content: space-around;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  height: 90vh;
+  background-color: #232323;
 }
 
 .container div {
+  color: #fff;
   text-align: center;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 41%;
+          flex: 0 0 41%;
+  border: 2px solid #0062FF;
+}
+
+.container .temp {
+  font-size: 5em;
 }
 /*# sourceMappingURL=style.css.map */

@@ -1,9 +1,14 @@
 .container{
     display: flex;
     justify-content: space-around;
-    align-items: center;
-    height: 90vh;
+    background-color: #232323;
     div{
+        color: #fff;
         text-align: center;
+        flex: 0 0 41%;
+        border: 2px solid #0062FF;
+    }
+    .temp{
+        font-size: 5em;
     }
 }
