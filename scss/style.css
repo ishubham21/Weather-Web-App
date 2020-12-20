@@ -5,6 +5,9 @@
 
 body {
   overflow: hidden;
+  position: relative;
+  background-color: #232323;
+  color: #fff;
 }
 
 .container {
@@ -16,31 +19,66 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background-color: #232323;
-  height: 100vh;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  height: 90vh;
 }
 
 .container div {
-  color: #fff;
   text-align: center;
   -webkit-box-flex: 0;
       -ms-flex: 0 0 41%;
           flex: 0 0 41%;
 }
 
-.container .temp {
+.container .temp h1 {
   font-size: 5em;
 }
 
+.container .temp h2 {
+  margin-top: 10px;
+  font-weight: 400;
+}
+
 .container .city {
-  line-height: 4em;
+  line-height: 3em;
 }
 
 .container .city p {
-  font-size: 20px;
+  font-size: 16px;
 }
 
 .container .city h1 {
-  font-size: 50px;
+  font-size: 35px;
+}
+
+@media (max-width: 500px) {
+  .container {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .container div {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 80%;
+            flex: 0 0 80%;
+  }
+}
+
+.name {
+  height: 10vh;
+}
+
+.name h3 {
+  font-weight: 400;
+  text-align: center;
+}
+
+.name a {
+  text-decoration: none;
+  color: #fff;
 }
 /*# sourceMappingURL=style.css.map */

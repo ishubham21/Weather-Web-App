@@ -4,28 +4,57 @@
 }
 body{
     overflow: hidden;
+    position: relative;
+    background-color: #232323;
+    color: #fff;
 }
 .container{
     display: flex;
     justify-content: space-around;
     align-items: center;
-    background-color: #232323;
-    height: 100vh;
+    flex-wrap: wrap;
+    height: 90vh;
     div{
-        color: #fff;
+        
         text-align: center;
         flex: 0 0 41%;
     }
     .temp{
-        font-size: 5em;
+        h1{
+            font-size: 5em;
+        }
+        h2{
+            margin-top: 10px;
+            font-weight: 400;
+        }
     }
     .city{
-        line-height: 4em;
+        line-height: 3em;
         p{
-            font-size: 20px;
+            font-size: 16px;
         }
         h1{
-            font-size: 50px;
+            font-size: 35px;
         }
+    }
+}
+@media (max-width: 500px){
+    .container{
+        justify-content: center;
+        align-items: center;
+    }
+        .container div{
+            flex: 0 0 80%;
+        }
+}
+.name{
+    height: 10vh;
+    h3{
+        font-weight: 400;
+        text-align: center;
+    }
+    a{
+        text-decoration: none;
+        color: #fff;
     }
 }
